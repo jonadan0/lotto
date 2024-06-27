@@ -29,6 +29,18 @@
             margin: 0 auto;
             max-width: 320px; /* 광고의 최대 너비 설정 */
         }
+         .ad-container1 {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            background-color: #f1f1f1; /* 배경 색상 조정 가능 */
+            z-index: 1000; /* 광고가 다른 요소들 위에 표시되도록 설정 */
+        }
+        .ad-wrapper1 {
+            margin: 0 auto;
+            max-width: 320px; /* 광고의 최대 너비 설정 */
+        }
         .kakao_ad_area {
             display: block;
             width: 100%; /* 광고 영역의 너비를 부모 요소에 맞춤 */
@@ -36,6 +48,15 @@
     </style>
 </head>
 <body>
+    <div class="ad-container1">
+        <div class="ad-wrapper1">
+	<ins class="kakao_ad_area" style="display:none;"
+	data-ad-unit = "DAN-780z6MDFF7TDAL7R"
+	data-ad-width = "320"
+	data-ad-height = "100"></ins>
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+</div>
+	</div>
     <div class="container">
         <h1>로또 추천기</h1>
         <div id="roulette" class="roulette"></div>
