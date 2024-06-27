@@ -18,24 +18,26 @@
             flex: 1;
         }
         .ad-container, .ad-container1 {
-            position: fixed;
-            bottom: 0;
             width: 100%;
             text-align: center;
-            background-color: #f1f1f1; /* 배경 색상 조정 가능 */
-            z-index: 1000; /* 광고가 다른 요소들 위에 표시되도록 설정 */
+            background-color: #f1f1f1; 
+            z-index: 1000; 
         }
         .ad-container1 {
+            position: fixed;
             top: 0;
-            bottom: auto;
+        }
+        .ad-container {
+            position: fixed;
+            bottom: 0;
         }
         .ad-wrapper, .ad-wrapper1 {
             margin: 0 auto;
-            max-width: 320px; /* 광고의 최대 너비 설정 */
+            max-width: 320px; 
         }
         .kakao_ad_area {
             display: block;
-            width: 100%; /* 광고 영역의 너비를 부모 요소에 맞춤 */
+            width: 100%; 
         }
     </style>
 </head>
