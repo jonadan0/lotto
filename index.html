@@ -9,7 +9,7 @@
     <style>
         body {
             margin: 0;
-            padding: 50%;
+            padding: 0;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
@@ -20,14 +20,18 @@
         .ad-container {
             position: fixed;
             bottom: 0;
-            width: 50px;
+            width: 100%;
             text-align: center;
             background-color: #f1f1f1; /* 배경 색상 조정 가능 */
             z-index: 1000; /* 광고가 다른 요소들 위에 표시되도록 설정 */
         }
+        .ad-wrapper {
+            margin: 0 auto;
+            max-width: 320px; /* 광고의 최대 너비 설정 */
+        }
         .kakao_ad_area {
             display: block;
-            margin: 0 auto;
+            width: 50%; /* 광고 영역의 너비를 부모 요소에 맞춤 */
         }
     </style>
 </head>
