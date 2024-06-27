@@ -18,11 +18,16 @@
             flex: 1;
         }
         .ad-container {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
             text-align: center;
-            margin-top: auto;
+            background-color: #f1f1f1; /* 배경 색상 조정 가능 */
+            z-index: 1000; /* 광고가 다른 요소들 위에 표시되도록 설정 */
         }
         .kakao_ad_area {
             display: block;
+            margin: 0 auto;
         }
     </style>
 </head>
