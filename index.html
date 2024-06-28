@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>로또 번호 추천기</title>
+    <title>로또 추천기</title>
     <link rel="stylesheet" href="styles.css">
     <script async src="//t1.daumcdn.net/kas/static/ba.min.js" type="text/javascript"></script>
     <style>
@@ -17,21 +17,15 @@
         .content {
             flex: 1;
         }
-        .ad-container, .ad-container1 {
+        .ad-container {
+            position: fixed;
+            bottom: 0;
             width: 100%;
             text-align: center;
             background-color: #f1f1f1; 
             z-index: 1000; 
         }
-        .ad-container1 {
-            position: fixed;
-            top: 0;
-        }
-        .ad-container {
-            position: fixed;
-            bottom: 0;
-        }
-        .ad-wrapper, .ad-wrapper1 {
+        .ad-wrapper {
             margin: 0 auto;
             max-width: 320px; 
         }
@@ -42,14 +36,6 @@
     </style>
 </head>
 <body>
-    <div class="ad-container1">
-        <div class="ad-wrapper1">
-            <ins class="kakao_ad_area" 
-                 data-ad-unit="DAN-780z6MDFF7TDAL7R"
-                 data-ad-width="320"
-                 data-ad-height="100"></ins>
-        </div>
-    </div>
     <div class="container">
         <h1>로또 추천기</h1>
         <div id="roulette" class="roulette"></div>
@@ -67,5 +53,6 @@
     <script type="text/javascript">
         kakao_adfit.load();
     </script>
+    <script src="script.js"></script>
 </body>
 </html>
